@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Repetição Guiada</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h1> Repetição Guiada</h1>
+
+    <h2>Transcrição</h2>
+    <div class="input-group">
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" accept=".pdf" id="transcriptionFile">
+        <label class="custom-file-label" for="transcriptionFile" aria-describedby="transcriptionFile">Escolha o arquivo
+          com a
+          Transcrição</label>
+      </div>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" id="transcription" src=""></iframe>
+    </div>
+
+    <h2>Audio</h2>
+    <div class="input-group">
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" accept=".mp3" id="audioFile">
+        <label class="custom-file-label" for="audioFile" aria-describedby="audioFile">Escolha o arquivo com o
+          audio</label>
+      </div>
+    </div>
+    <div class="row mt-1">
+      <audio class="col" controls id="audio" width="100%" src=""></audio>
+    </div>
+
+    <h2>Gravações</h2>
+    <div>
+      <button type="button" class="btn btn-primary" id='start' disabled>Gravar</button>
+      <button type="button" class="btn btn-secondary" id='stop' disabled>Parar</button>
+    </div>
+    <div class="row mt-1" id="recordings">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
